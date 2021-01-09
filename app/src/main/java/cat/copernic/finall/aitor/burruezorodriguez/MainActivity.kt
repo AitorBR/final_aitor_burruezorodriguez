@@ -172,7 +172,6 @@ class MainActivity : AppCompatActivity() {
 
 
     override fun onBackPressed() {
-        super.onBackPressed()
         salirAppDialog()
     }
 
@@ -186,12 +185,14 @@ class MainActivity : AppCompatActivity() {
             .setPositiveButton(R.string.si) { _, _ ->
                 Toast.makeText(this, R.string.closeApp, Toast.LENGTH_SHORT).show()
                 finish()
+                super.onBackPressed()
             }
             .setNegativeButton(R.string.no) { _, _ ->
                 // nada
             }
             .create()
-            .window?.setBackgroundDrawableResource(android.R.color.transparent)
+            .show()
+
     }
 
     fun btn_OperacionesBasicas(view: View) {

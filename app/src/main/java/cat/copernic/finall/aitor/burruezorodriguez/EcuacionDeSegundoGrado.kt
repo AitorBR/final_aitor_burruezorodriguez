@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import java.lang.StringBuilder
 
 class EcuacionDeSegundoGrado : AppCompatActivity() {
 
@@ -32,29 +33,37 @@ class EcuacionDeSegundoGrado : AppCompatActivity() {
     }
 
     fun btn_Calcular(view: View) {
-        var a: Double? = etn_A.text.toString().toDouble()
-        var b: Double? = etn_B.text.toString().toDouble()
-        var c: Double? = etn_C.text.toString().toDouble()
+        var a: String? = etn_A.text.toString()
+        var b: String? = etn_B.text.toString()
+        var c: String? = etn_C.text.toString()
 
-        a?.let {
-            b?.let {
-                c?.let {
-                    calcularResultado(a, b, c)
-                } ?: run {
-                    Toast.makeText(this, R.string.nullInA, Toast.LENGTH_LONG).show()
+        if (!a.isNullOrEmpty()) {
+            if (!b.isNullOrEmpty()) {
+                if (!c.isNullOrEmpty()) {
+
+                    var a2: Double = a!!.toDouble()
+                    var b2: Double = b!!.toDouble()
+                    var c2: Double = c!!.toDouble()
+
+                    calcularResultado(a2, b2, c2)
+                } else {
+                    Toast.makeText(this, R.string.nullInC, Toast.LENGTH_LONG).show()
                 }
-            } ?: run {
+            } else {
                 Toast.makeText(this, R.string.nullInB, Toast.LENGTH_LONG).show()
             }
-        } ?: run {
-            Toast.makeText(this, R.string.nullInC, Toast.LENGTH_LONG).show()
+        } else {
+            Toast.makeText(this, R.string.nullInA, Toast.LENGTH_LONG).show()
         }
     }
+
 
     fun calcularResultado(a: Double, b: Double, c: Double) {
         val x1: Double = (-b + Math.sqrt((b * b) - (4 * a * c))) / (2 * a)
         val x2: Double = (-b - Math.sqrt((b * b) - (4 * a * c))) / (2 * a)
 
+        /*tv_Solucion1.setText(getText(R.string.tv_ResultadoPositivo) + x1.toString())
+        tv_Solucion2.setText(getText(R.string.tv_ResultadoNegativo) + x2.toString())*/
         tv_Solucion1.setText("Resultado positivo: " + x1.toString())
         tv_Solucion2.setText("Resultado negativo: " + x2.toString())
     }

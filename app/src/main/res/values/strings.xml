@@ -10,7 +10,7 @@
     <string name="Calcular">Calcular</string>
 
 
-    <!--Activity 1-->
+    <!--Activity 1 main-->
     <!--botones -->
     <string name="btn_OperacionesBasicas">Operaciones basicas</string>
     <string name="btn_SegundoGrado">Ecuacion de segundo grado</string>
@@ -23,7 +23,7 @@
     <string name="closeApp">Se ha cerrado la app</string>
 
 
-    <!--Activity 2-->
+    <!--Activity 2 segundo grado-->
     <!--texto-->
     <string name="A">A</string>
     <string name="B">B</string>
@@ -38,7 +38,7 @@
     <string name="nullInB">No hay valor en el campo B</string>
     <string name="nullInC">No hay valor en el campo C</string>
 
-    <!--Activity 3-->
+    <!--Activity 3 basico-->
     <!--texto-->
 
     <string name="etn_valor1">Valor 1</string>
