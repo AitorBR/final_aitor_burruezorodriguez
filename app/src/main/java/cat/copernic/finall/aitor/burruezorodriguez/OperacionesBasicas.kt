@@ -88,6 +88,11 @@ class OperacionesBasicas : AppCompatActivity() {
         finish()
     }
 
+    fun btn_Atras(view: View) {
+        startActivity(Intent(this, MainActivity::class.java))
+        finish()
+    }
+
     fun btn_About(view: View) {
         Toast.makeText(this, R.string.textAbout, Toast.LENGTH_SHORT).show()
     }

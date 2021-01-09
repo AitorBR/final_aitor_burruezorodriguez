@@ -69,4 +69,9 @@ class EcuacionDeSegundoGrado : AppCompatActivity() {
         Toast.makeText(this, R.string.textAbout, Toast.LENGTH_SHORT).show()
     }
 
+    fun btn_Atras(view: View) {
+        startActivity(Intent(this, MainActivity::class.java))
+        finish()
+    }
+
 }
