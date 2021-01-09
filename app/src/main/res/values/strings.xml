@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">final_aitor_burruezorodriguez</string>
+
+    <!--botones  generales-->
+    <string name="btn_Atras">Atras</string>
+    <string name="btn_About">About</string>
+    <string name="textAbout">Aitor Burruezo Rodriguez</string>
+
+    <!--botones compartidos-->
+    <string name="Calcular">Calcular</string>
+
+
+    <!--Activity 1-->
+    <!--botones -->
+    <string name="btn_OperacionesBasicas">Operaciones basicas</string>
+    <string name="btn_SegundoGrado">Ecuacion de segundo grado</string>
+
+
+    <!--alert dialog salir-->
+    <string name="salirApp">Deseas saliar de la app</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="closeApp">Se ha cerrado la app</string>
+
+
+    <!--Activity 2-->
+    <!--texto-->
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="C">C</string>
+
+    <string name="tv_ResultadoPositivo">Resultado positivo: </string>
+    <string name="tv_ResultadoNegativo">Resultado negativo: </string>
+
+
+    <!--error nulo-->
+    <string name="nullInA">No hay valor en el campo A</string>
+    <string name="nullInB">No hay valor en el campo B</string>
+    <string name="nullInC">No hay valor en el campo C</string>
+
+    <!--Activity 3-->
+    <!--texto-->
+
+    <string name="etn_valor1">Valor 1</string>
+    <string name="etn_valor2">Valor 2</string>
+    <string name="rb_sumar">Sumar</string>
+    <string name="rb_restar">Restar</string>
+    <string name="rb_multiplicar">Multiplicar</string>
+    <string name="rb_dividir">Dividir</string>
+    <string name="tv_resultado">Resultado</string>
+
+
+
+</resources>
