@@ -55,41 +55,78 @@ class OperacionesBasicas : AppCompatActivity() {
     }
 
     private fun sumar() {
-        val valor1 = etn_Valor1.text.toString().toDouble()
-        val valor2 = etn_Valor2.text.toString().toDouble()
+        val valor1: String? = etn_Valor1.text.toString()
+        val valor2: String? = etn_Valor2.text.toString()
 
-        tv_Resultado.setText((valor1 + valor2).toString())
+        if (!valor1.isNullOrEmpty()) {
+            if (!valor2.isNullOrEmpty()) {
+
+                val num1 = valor1.toDouble()
+                val num2 = valor2.toDouble()
+
+                tv_Resultado!!.setText((num1!! + num2!!).toString())
+            }
+        }
+
+
     }
 
     private fun restar() {
-        val valor1 = etn_Valor1.text.toString().toDouble()
-        val valor2 = etn_Valor2.text.toString().toDouble()
+        val valor1: String? = etn_Valor1.text.toString()
+        val valor2: String? = etn_Valor2.text.toString()
 
-        tv_Resultado.setText((valor1 - valor2).toString())
+        if (!valor1.isNullOrEmpty()) {
+            if (!valor2.isNullOrEmpty()) {
+
+                val num1 = valor1.toDouble()
+                val num2 = valor2.toDouble()
+
+                tv_Resultado.setText((num1 - num2).toString())
+            }
+        }
     }
 
     private fun multiplicar() {
-        val valor1 = etn_Valor1.text.toString().toDouble()
-        val valor2 = etn_Valor2.text.toString().toDouble()
+        val valor1: String? = etn_Valor1.text.toString()
+        val valor2: String? = etn_Valor2.text.toString()
 
-        tv_Resultado.setText((valor1 * valor2).toString())
+        if (!valor1.isNullOrEmpty()) {
+            if (!valor2.isNullOrEmpty()) {
+
+                val num1 = valor1.toDouble()
+                val num2 = valor2.toDouble()
+
+                tv_Resultado.setText((num1 * num2).toString())
+            }
+        }
+
     }
 
     private fun dividir() {
-        val valor1 = etn_Valor1.text.toString().toDouble()
-        val valor2 = etn_Valor2.text.toString().toDouble()
+        val valor1: String? = etn_Valor1.text.toString()
+        val valor2: String? = etn_Valor2.text.toString()
 
-        tv_Resultado.setText((valor1 / valor2).toString())
+        if (!valor1.isNullOrEmpty()) {
+            if (!valor2.isNullOrEmpty()) {
+
+                val num1 = valor1.toDouble()
+                val num2 = valor2.toDouble()
+
+                tv_Resultado.setText((num1 / num2).toString())
+            }
+        }
     }
 
     override fun onBackPressed() {
         super.onBackPressed()
         startActivity(Intent(this, MainActivity::class.java))
+        Animation().slideLeft(this)
         finish()
     }
 
     fun btn_Atras(view: View) {
         startActivity(Intent(this, MainActivity::class.java))
+        Animation().slideLeft(this)
         finish()
     }
 

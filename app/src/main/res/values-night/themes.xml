@@ -1,10 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Final_aitor_burruezorodriguez" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Final_aitor_burruezorodriguez" parent="Theme.MaterialComponents.NoActionBar">     <!--Theme.MaterialComponents.DayNight.DarkActionBar-->
+
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimary">#3F51B5</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="textColorAlertDialogListItem">#8BC34A</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">19dp</item>
+        <item name="android:fontFamily">sans-serif</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>

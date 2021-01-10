@@ -7,7 +7,6 @@ import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import java.lang.StringBuilder
 
 class EcuacionDeSegundoGrado : AppCompatActivity() {
 
@@ -71,6 +70,7 @@ class EcuacionDeSegundoGrado : AppCompatActivity() {
     override fun onBackPressed() {
         super.onBackPressed()
         startActivity(Intent(this, MainActivity::class.java))
+        Animation().slideLeft(this)
         finish()
     }
 
@@ -80,6 +80,7 @@ class EcuacionDeSegundoGrado : AppCompatActivity() {
 
     fun btn_Atras(view: View) {
         startActivity(Intent(this, MainActivity::class.java))
+        Animation().slideLeft(this)
         finish()
     }
 
